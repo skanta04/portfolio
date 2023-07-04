@@ -1,0 +1,48 @@
+.transparent-image {
+    opacity: 0.2;
+    filter: brightness(110%);
+}
+.gfg{
+    position: relative;
+}
+.textname {
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    font-size: 5vw;
+
+}
+.textp {
+    position: absolute;
+    bottom: 45%;
+    left: 5%;
+    font-size: 2vw;
+    
+}
+
+button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #ccdfd7;
+    padding: 1vw 3vw;
+    color: #2c293f;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container.my-container {
+    border: 1px #d1e2dd
+}
+
+.circular {
+    border-radius: 50%;
+    width: 1px;
+}
+
