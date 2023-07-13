@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'personal-portfolio';
+  loadedFeature = 'home'|| 'contactMe' || 'courses' || 'resume' || 'projects';
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }

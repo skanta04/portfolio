@@ -1,3 +1,6 @@
-<app-header></app-header>
-<app-home></app-home>
-<app-resume></app-resume>
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<app-home *ngIf="loadedFeature === 'home'"></app-home>
+<app-projects *ngIf="loadedFeature === 'projects'"></app-projects>
+<app-resume *ngIf="loadedFeature === 'resume'"></app-resume>
+<app-courses *ngIf="loadedFeature === 'courses'"></app-courses>
+<app-contact *ngIf="loadedFeature === 'contact'"></app-contact>
