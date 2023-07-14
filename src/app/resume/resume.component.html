@@ -1,7 +1,30 @@
 
 <h1 style="text-align: center;">Resume</h1>
 <hr>
+<h2 class="h2margin">Education</h2>
+
+<div class="container border border-primary"
+*ngFor="let work of works">
+    <div class="row">
+        <div class="col-xs-2">
+            <p>{{work.imagePath}}</p>
+        </div>
+        <div class="col-xs-6">
+            <p>{{ work.name }}</p>
+            <p>{{ work.role}}</p>
+        </div>
+        <div class="col-xs-4">
+            <p>{{work.date}}</p>
+            <p>{{ work.location }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <p>{{work.description}}</p>
+    </div>
+</div>
+
 <h2 class="h2margin">Work Experience</h2>
+
 <div class="container border border-primary"
 *ngFor="let experience of experiences">
     <div class="row">

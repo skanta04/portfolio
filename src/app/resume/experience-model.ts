@@ -15,4 +15,5 @@ export class Experience {
         this.imagePath = imagePath;
         this.location = location;
     }
+    
 }
