@@ -1,1 +1,14 @@
-<p>courses works!</p>
+<div class="courses-container">
+    <h2 class="section-title">Courses</h2>
+  
+    <div class="course" *ngFor="let course of courses">
+      <div class="course-header">
+        <img [src]="course.image" alt="Course Image">
+      </div>
+      <div class="course-details">
+        <h3 class="course-title">{{ course.title }}</h3>
+        <p class="course-description">{{ course.description }}</p>
+      </div>
+    </div>
+  </div>
+  

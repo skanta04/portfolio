@@ -3,8 +3,15 @@
 <hr>
 <h2 class="h2margin">Education</h2>
 
-<div class="container border border-primary"
-*ngFor="let work of works">
+<div class="container custom-container"
+    *ngFor="let work of works"
+    [ngStyle]="{
+        'border-color': style.borderColor,
+        'border-style': style.borderStyle,
+        'border-width': style.borderWidth,
+        'border-radius': style.borderRadius
+    }">
+
     <div class="row">
         <div class="col-xs-2">
             <p>{{work.imagePath}}</p>
@@ -19,14 +26,22 @@
         </div>
     </div>
     <div class="row">
-        <p>{{work.description}}</p>
+        <div class="col-xs-12">
+            <p>{{work.description}}</p>
+        </div>
     </div>
 </div>
 
 <h2 class="h2margin">Work Experience</h2>
 
-<div class="container border border-primary"
-*ngFor="let experience of experiences">
+<div class="container custom-container"
+    *ngFor="let experience of experiences"
+    [ngStyle]="{
+        'border-color': style.borderColor,
+        'border-style': style.borderStyle,
+        'border-width': style.borderWidth,
+        'border-radius': style.borderRadius
+    }">
     <div class="row">
         <div class="col-xs-2">
             <p>{{experience.imagePath}}</p>
@@ -41,7 +56,9 @@
         </div>
     </div>
     <div class="row">
-        <p>{{experience.description}}</p>
+        <div class="col-xs-12">
+            <p>{{experience.description}}</p>
+        </div>
     </div>
 
 </div>

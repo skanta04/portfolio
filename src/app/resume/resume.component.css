@@ -1,7 +1,38 @@
-hr {
+h1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  hr {
     margin: 30px;
-}
-.h2margin {
-    margin: 5vw
-}
+  }
+  
+  .h2margin {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+  
+  .container {
+    border: 1px solid #ccdfd7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .row {
+    margin-bottom: 10px;
+  }
+  
+  .col-xs-2,
+  .col-xs-6,
+  .col-xs-4,
+  .col-xs-12 {
+    padding: 5px;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
 
