@@ -31,14 +31,20 @@ button {
     color: #2c293f;
     font-weight: bolder;
     font-size: 1.5vw;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 h1 {
     text-align: center;
+    margin-top: 20px;
 }
 
 .container.my-container {
-    border: 1px #472c41
+    border: 1px #472c41;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .circular {
