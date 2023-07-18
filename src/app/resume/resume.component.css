@@ -15,11 +15,11 @@ h1 {
   }
   
   .container {
-    border: 1px solid #ccdfd7;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
   }
   
   .row {
@@ -37,4 +37,14 @@ h1 {
     margin: 0;
   }
   
+.circular-image {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 70px; /* Adjust the size as needed */
+    max-height: 70px;
+}
 
+.list-format {
+    color: whitesmoke;
+}

@@ -1,6 +1,5 @@
 
 <h1 style="text-align: center;">Resume</h1>
-<hr>
 <div class="row">
     <div class="col-xs-12">
         <h2 class="h2margin">Education</h2>
@@ -19,7 +18,7 @@
 
     <div class="row">
         <div class="col-xs-2">
-            <p>{{work.imagePath}}</p>
+            <img src="{{work.imagePath}}" alt="Work Image" class="circular-image">
         </div>
         <div class="col-xs-6">
             <p>{{ work.name }}</p>
@@ -32,7 +31,9 @@
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <p>{{work.description}}</p>
+            <ul>
+                <li *ngFor="let item of work.description" class="list-format"> {{item}}</li>
+            </ul>
         </div>
     </div>
 </div>
@@ -49,20 +50,22 @@
     }">
     <div class="row">
         <div class="col-xs-2">
-            <p>{{experience.imagePath}}</p>
+            <img src="{{experience.imagePath}}" alt="Experience Image" class="circular-image">
         </div>
         <div class="col-xs-6">
-            <p>{{ experience.name }}</p>
+            <p><strong>{{ experience.name }}</strong></p>
             <p>{{ experience.role}}</p>
         </div>
         <div class="col-xs-4">
-            <p class="text-right">{{experience.date}}</p>
+            <p class="text-right"><strong>{{experience.date}}</strong></p>
             <p class="text-right">{{ experience.location }}</p>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <p>{{experience.description}}</p>
+            <ul>
+                <li *ngFor="let item of experience.description" class="list-format"> {{item}}</li>
+            </ul>
         </div>
     </div>
 

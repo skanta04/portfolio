@@ -4,22 +4,27 @@ import { Experience } from './experience-model';
 
 import { Style } from './style-model';
 
+
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css']
 })
+
 export class ResumeComponent {
   experiences: Experience[] = [
-    new Experience('Cisco', 'Systems Engineer', 'June 2023 - August 2023','Using postman to do stuff and more api things', 'insertImagePath', 'Morrisville, NC', '#ccdfd7' ),
-    new Experience('VisuaLab', 'Lab Assistant', 'Nov 2022 - May 2023','Through learning Python back-end development and JavaScript web frameworks, I shadowed and assissted in the deployment and maintenance of an open source machine learning and document clustering tool to organize text data to assist with interpretive research. This tool will help analyze and understand large text corpora, potentially leading to new insights and discoveries in human-computer interaction, anthropology, and social psychology.', 'insertImagePath', 'Chapel Hill, NC', '#ccdfd7'),
-    new Experience('Enzerna Biosciences', 'Research Assistant', 'September 2021 - August 2022','Helped research medicines that turn on/off genes that cause rare diseases or cancers. I learned various lab techniques such as RNA isolation, DNA Plasmid extraction, and using a gel electrophoresis machine.', 'insertImagePath', 'Morrisville, NC' , '#ccdfd7'),
-    new Experience('Code Ninjas', 'Instructor', 'June 2023 - August 2023','Help kids, ages 5-14, basic coding games, in JavaScript; tutor kids to code virtually and in person; supervise Roblox summer camps. During my time here, I helped raise diversity to decrease the gender gap in STEM related fields by recruiting young girls to participate in coding sessions.', 'insertImagePath', 'Morrisville, NC', '#ccdfd7')
+    new Experience('Cisco', 'Systems Engineer', 'June 2023 - August 2023',['Developed a Cisco Learning Lab using Python and RESTful APIs to provide newcomers with hands-on experience in creating, running, and deleting Instant Tests, enabling them to connect with the ThousandEyes agent, MicrosoftOffice Login', 'Utilized LLM, pandas, numpy, and nltk to design and implement a Webex bot that efficiently extracts and presents diverse client information', 'Researched and analyzed various customer software and hardware issues, enabling the presentation of appropriate Cisco solutions such as Umbrella, Meraki, SecureX, and more.'], "assets/images/cisco.jpeg", 'Morrisville, NC', '#ccdfd7' ),
+
+    new Experience('Alpha Omega Epsilon', 'Founder and Web Developer', 'April 2023 - Present', ['Founded a professional sorority focused on empowering women with a passion for technology, attracting a membership of 15 women thus far, and actively contributing to bridging the gender gap in the field.', 'Spearheaded the development of a dynamic website utilizing CSS, HTML, and JavaScript to effectively showcase the sorority’s mission, values, and initiatives.','Overseeing the final stages of a comprehensive recruiting system and event planning schedule to streamline organizational processes.'], "assets/images/aoe.png", 'Chapel Hill, NC','#ccdfd7'),
+
+    new Experience('Enzerna Biosciences', 'Research Assistant', 'September 2021 - August 2022',['Researched medicines that turn on/off genes that cause rare diseases or cancers.', 'Utilized various lab techniques such as RNA isolation, DNA Plasmid extraction, and gel electrophoresis.'], "assets/images/enzerna.jpeg", 'Morrisville, NC' , '#ccdfd7'),
+
+    new Experience('Code Ninjas', 'Instructor', 'June 2023 - August 2023',['Provided engaging and comprehensive instruction to children aged 5-14, fostering their understanding of JavaScript and enabling them to develop Roblox and browser-based games.', 'Drove recruitment efforts by actively engaging with interested parents; consistent influx of 2 to 4 enrollments per week.'], "assets/images/ninja1.png", 'Morrisville, NC', '#ccdfd7')
   ]
 
   works: Experience[] = [
-    new Experience('UNC Chapel Hill', "B.S. in Computer Science and Minors in MEJO & Statistics", 'Aug 2022 - May 2026', 'Activites: ', 'insertImagePath','Chapel Hill, NC', '#ccdfd7'),
-    new Experience('Cary High School', 'High School Diploma', 'Aug 2018 - Jun 2022', 'Activities:', "insertImagePath", 'Cary, NC', '#ccdfd7')
+    new Experience('UNC Chapel Hill', "B.S. in Computer Science and Minors in MEJO & Statistics", 'Aug 2022 - May 2026', ['Activites: '], "assets/images/unc.png",'Chapel Hill, NC', '#ccdfd7')
+    
   ]
 
   style: Style = new Style();
