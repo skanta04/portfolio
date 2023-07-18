@@ -1,11 +1,25 @@
+.navbar {
+    background-color: #242644; 
+    border: none;
+    border-radius: 0;
+}
+
 .navbar-brand {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-    color: #d1e2dd;
-    
+    color: #ccdfd7; 
 }
-.navbar.navbar-default nav.navbar-nav.navbar-right > li > a {
-    font-size: 25px;
+
+.navbar-nav > li > a {
+    font-size: 18px;
     font-weight: bold;
-    color: #d1e2dd;
+    color: #ccdfd7; 
+    padding: 10px 15px;
+    transition: color 0.3s ease;
 }
+
+.navbar-nav > li > a:hover, 
+.navbar-nav > li > a:focus {
+    color: #242644; 
+}
+
