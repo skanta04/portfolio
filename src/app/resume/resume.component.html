@@ -1,7 +1,12 @@
 
 <h1 style="text-align: center;">Resume</h1>
 <hr>
-<h2 class="h2margin">Education</h2>
+<div class="row">
+    <div class="col-xs-12">
+        <h2 class="h2margin">Education</h2>
+    </div>
+</div>
+
 
 <div class="container custom-container"
     *ngFor="let work of works"
@@ -21,8 +26,8 @@
             <p>{{ work.role}}</p>
         </div>
         <div class="col-xs-4">
-            <p>{{work.date}}</p>
-            <p>{{ work.location }}</p>
+            <p class="text-right">{{work.date}}</p>
+            <p class="text-right">{{ work.location }}</p>
         </div>
     </div>
     <div class="row">
@@ -51,8 +56,8 @@
             <p>{{ experience.role}}</p>
         </div>
         <div class="col-xs-4">
-            <p>{{experience.date}}</p>
-            <p>{{ experience.location }}</p>
+            <p class="text-right">{{experience.date}}</p>
+            <p class="text-right">{{ experience.location }}</p>
         </div>
     </div>
     <div class="row">
