@@ -14,7 +14,7 @@ h1 {
 
   }
   
-  .container {
+  .custom-container {
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
@@ -46,5 +46,18 @@ h1 {
 }
 
 .list-format {
-    color: whitesmoke;
+    color: black;
+}
+
+.mar {
+    max-width: 1000px;
+}
+
+.cool-container {
+    max-width: 1000px;
+
+}
+
+.fontSize {
+    font-size: 17px;
 }

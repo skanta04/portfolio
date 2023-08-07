@@ -8,7 +8,6 @@ import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { CoursesComponent } from './courses/courses.component';
-import { TerminalComponent } from './terminal/terminal.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { TerminalComponent } from './terminal/terminal.component';
     HomeComponent,
     ContactComponent,
     CoursesComponent,
-    TerminalComponent
   ],
   imports: [
     BrowserModule

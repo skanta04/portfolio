@@ -1,8 +1,17 @@
+<br>
+<br>
+<div class="container cool-container">
+    <h1 style="text-align: center;">Resume</h1>
+</div>
 
-<h1 style="text-align: center;">Resume</h1>
-<div class="row">
-    <div class="col-xs-12">
-        <h2 class="h2margin">Education</h2>
+<div class="container cool-container">
+    <div class="row">
+        <div class="col-xs-8"> 
+            <h2>Education</h2>
+        </div>
+        <div class="col-xs-4 text-right">
+            <button class="btn btn-primary">Resume</button>
+        </div>
     </div>
 </div>
 
@@ -15,17 +24,16 @@
         'border-width': style.borderWidth,
         'border-radius': style.borderRadius
     }">
-
     <div class="row">
         <div class="col-xs-2">
             <img src="{{work.imagePath}}" alt="Work Image" class="circular-image">
         </div>
         <div class="col-xs-6">
-            <p>{{ work.name }}</p>
+            <p><strong>{{ work.name }}</strong></p>
             <p>{{ work.role}}</p>
         </div>
         <div class="col-xs-4">
-            <p class="text-right">{{work.date}}</p>
+            <p class="text-right"><strong>{{work.date}}</strong></p>
             <p class="text-right">{{ work.location }}</p>
         </div>
     </div>
@@ -37,8 +45,13 @@
         </div>
     </div>
 </div>
-
-<h2 class="h2margin">Work Experience</h2>
+<div class="container cool-container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Work Experience</h2>
+        </div>
+    </div>
+    </div>
 
 <div class="container custom-container"
     *ngFor="let experience of experiences"
@@ -53,7 +66,7 @@
             <img src="{{experience.imagePath}}" alt="Experience Image" class="circular-image">
         </div>
         <div class="col-xs-6">
-            <p><strong>{{ experience.name }}</strong></p>
+            <p class="fontSize"><strong>{{ experience.name }}</strong></p>
             <p>{{ experience.role}}</p>
         </div>
         <div class="col-xs-4">

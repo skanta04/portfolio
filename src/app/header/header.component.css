@@ -1,5 +1,6 @@
+
 .navbar {
-    background-color: #242644; 
+    background-color: aliceblue; 
     border: none;
     border-radius: 0;
 }
@@ -7,19 +8,19 @@
 .navbar-brand {
     font-size: 30px;
     font-weight: bold;
-    color: #ccdfd7; 
+    color: black; 
 }
 
 .navbar-nav > li > a {
     font-size: 18px;
     font-weight: bold;
-    color: #ccdfd7; 
+    color: black; 
     padding: 10px 15px;
     transition: color 0.3s ease;
 }
 
-.navbar-nav > li > a:hover, 
+.navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
-    color: #242644; 
+    color: black; 
 }
 

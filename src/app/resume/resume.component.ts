@@ -23,7 +23,7 @@ export class ResumeComponent {
   ]
 
   works: Experience[] = [
-    new Experience('UNC Chapel Hill', "B.S. in Computer Science and Minors in MEJO & Statistics", 'Aug 2022 - May 2026', ['Activites: '], "assets/images/unc.png",'Chapel Hill, NC', '#ccdfd7')
+    new Experience('UNC Chapel Hill', "B.S. in Computer Science and Minors in MEJO & Statistics", 'Aug 2022 - May 2026', ['Activites: Alpha Omega Epsilon, Women in Computer Science'], "assets/images/unc.png",'Chapel Hill, NC', '#ccdfd7')
     
   ]
 

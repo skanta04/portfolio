@@ -1,12 +1,12 @@
 body {
-    background-color: #242644 !important;
+    background-color: aliceblue !important;
 }
 
 h1, h2, h3, h4, h5 {
-    color: #ccdfd7 !important;
+    color: black !important;
 }
 
 p {
-    color: whitesmoke;
+    color: black;
 }
 
